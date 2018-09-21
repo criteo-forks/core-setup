@@ -6,13 +6,13 @@
 
     <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == ''">false</StabilizePackageVersion>
 
-    <PreReleaseLabel>criteo1</PreReleaseLabel>
+    <PreReleaseLabel>criteo2</PreReleaseLabel>
     <IncludePreReleaseLabelInPackageVersion>true</IncludePreReleaseLabelInPackageVersion>
     <IncludePreReleaseLabelInPackageVersion Condition="'$(StabilizePackageVersion)' != 'true' or '$(PackageVersionStamp)' != ''">true</IncludePreReleaseLabelInPackageVersion>
     <IncludeBuildNumberInPackageVersion Condition="'$(StabilizePackageVersion)' != 'true'">true</IncludeBuildNumberInPackageVersion>
 
     <ReleaseSuffix>$(PreReleaseLabel)</ReleaseSuffix>
-    <ReleaseBrandSuffix Condition="'$(IncludePreReleaseLabelInPackageVersion)' == 'true'">Release Candidate 1</ReleaseBrandSuffix>
+    <ReleaseBrandSuffix Condition="'$(IncludePreReleaseLabelInPackageVersion)' == 'true'">Release Candidate 2</ReleaseBrandSuffix>
     <Channel>master</Channel>
     <BranchName>master</BranchName>
     <ContainerName>dotnet</ContainerName>
