@@ -71,7 +71,7 @@
     <VersionSuffix Condition="'$(IncludePreReleaseLabelInPackageVersion)' == 'true'">$(PreReleaseLabel)</VersionSuffix>
     <VersionSuffix Condition="'$(IncludeBuildNumberInPackageVersion)' == 'true'">$(VersionSuffix)-$(BuildNumberMajor)-$(BuildNumberMinor)</VersionSuffix>
 
-    <ProductVersionSuffix Condition="'$(IncludePreReleaseLabelInPackageVersion)' == 'true'">-$(VersionSuffix)</ProductVersionSuffix>
+    <ProductVersionSuffix>-criteo1</ProductVersionSuffix>
     <ProductVersion>$(MajorVersion).$(MinorVersion).$(PatchVersion)$(ProductVersionSuffix)</ProductVersion>
     <ProductionVersion>$(MajorVersion).$(MinorVersion).$(PatchVersion)</ProductionVersion>
 
