@@ -6,7 +6,7 @@
 
     <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == ''">false</StabilizePackageVersion>
 
-    <PreReleaseLabel>criteo1</PreReleaseLabel>
+    <PreReleaseLabel>keywords-filtering</PreReleaseLabel>
     <IncludePreReleaseLabelInPackageVersion>true</IncludePreReleaseLabelInPackageVersion>
 
     <IncludeBuildNumberInPackageVersion Condition="'$(StabilizePackageVersion)' != 'true'">true</IncludeBuildNumberInPackageVersion>
